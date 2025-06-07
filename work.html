@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nantha Venkat Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
+    <script src="scrcipt.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-white to-gray-100 text-gray-900">
+    <div id="wrapp" class="min-h-svh">
+        <div class="rounded-md h-full pt-20">
+            <!-- Header -->
+            <header id="main-header"
+                class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 flex justify-between items-center p-6">
+                <!-- Your existing header content -->
+                <!-- Logo -->
+                <a href="index.html" class="signature"><img src="./img/Signature.svg" alt="Nantha Venkat"
+                        class="w-24"></a>
+
+                <!-- Desktop Navigation (hidden on mobile) -->
+                <nav id="main-navbar"
+                    class="fixed left-[50%] transition-transform duration-300 -translate-x-1/2 space-x-6 hidden md:flex bg-opacity-20 rounded-2xl shadow-lg shadow-black/10 bg-white/50 backdrop-blur-sm border border-white border-opacity-30 py-3 px-5 font-light">
+                    <a href="work.html" class="text-gray-900 hover:text-blue-500">About</a>
+                    <a href="about.html" class="text-blue-500 hover:text-blue-500 font-semibold"
+                        style="font-family: 'Literata', sans-serif"><i>Work</i></a>
+                    <a href="#" class="text-gray-900 hover:text-blue-500">Testimonials</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-500">Articles</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button (hidden on desktop) -->
+                <button id="menu-open" class="md:hidden text-gray-800 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Let's Connect Button (hidden on mobile, shown on desktop) -->
+                <a href="mailto:vnanthakumar00@gmail.com"
+                    class="hidden md:block bg-gray-700 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-500 transition-all duration-200 border border-gray-500 hover:border-blue-700">
+                    Let's connect
+                </a>
+            </header>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu"
+                class="fixed inset-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 flex flex-col items-center justify-center space-y-8 h-0 overflow-hidden transition-all duration-500 ease-in-out">
+
+                <!-- logo -->
+                <a href="index.html" class="signature"><img src="./img/Signature.svg" alt="Nantha Venkat"
+                        class="w-24 absolute top-6 left-6"></a>
+
+                <!-- Close Button -->
+                <button id="menu-close" class="absolute top-6 right-6 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Menu Links -->
+                <a href="#" class="text-2xl text-blue-500 hover:text-blue-500"><i>Works</i></a>
+                <a href="#" class="text-2xl text-blue-500 hover:text-blue-500 font-semibold"
+                    style="font-family: 'Literata', sans-serif">About</a>
+                <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Testimonials</a>
+                <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Articles</a>
+
+                <a href="mailto:vnanthakumar00@gmail.com"
+                    class="mt-8 bg-gray-700 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-500 transition-all duration-200 border border-gray-500 hover:border-blue-700 text-lg">
+                    Let's connect
+                </a>
+            </div>
+
+            <div class="js-scroll" data-lenis-prevent>
+                <!-- about Section -->
+                <section class="px-4 py-12 mx-auto max-w-[1440px]">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-semibold text-gray-900">Selected work</h2>
+                        <p class="text-gray-500 text-sm">[2022 – 2023]</p>
+                    </div>
+
+                    <div class="flex flex-wrap -m-3">
+                        <!-- Card 1 -->
+                        <div class="w-full sm:w-1/2 lg:w-7/12 p-4 flex">
+                            <div
+                                class="flex flex-col bg-gray-300 backdrop-blur-sm rounded-xl shadow-md p-5 border border-white h-full w-full">
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="w-full sm:w-1/2 lg:w-5/12 p-4 flex">
+                            <div
+                                class="flex flex-col bg-gray-300 backdrop-blur-sm rounded-xl shadow-md p-5 border border-white h-full w-full">
+                            </div>
+                        </div>
+                </section>
+            </div>
+
+
+            <!-- Footer Buttons -->
+            <footer class="fixed bottom-4 right-4 text-right flex">
+                <a href="mailto:vnanthakumar00@gmail.com"
+                    class="bg-white shadow px-4 mr-2 py-1 rounded-full transition-all duration-100 inline-flex group hover:scale-[1.1]">
+                    <img src="img/envelope.svg" alt="mail" width="20" class="inline mr-2">Drop an Email <span
+                        class=" group-hover:inline ml-2 -rotate-45"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="" class="bg-white shadow px-4 py-1 rounded-full text-sm inline-flex">✉️ Made in Framer</a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easeOutExpo
+            smooth: true,
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smoothTouch: false, // if true, slows mobile scroll too
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+
+</body>
+
+</html>

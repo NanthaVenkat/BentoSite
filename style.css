@@ -1,0 +1,108 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .floating {
+            animation: floating 3s infinite linear;
+        }
+
+        @keyframes floating {
+            from {
+                transform: translate(0, 0px);
+            }
+
+            65% {
+                transform: translate(0px, 15px);
+            }
+
+            to {
+                transform: translate(0, -0px);
+            }
+        }
+
+        .swing img {
+            animation: swing 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes swing {
+            0% {
+                transform: rotate(2deg);
+            }
+
+            100% {
+                transform: rotate(-2deg);
+            }
+        }
+
+        .aft-arrow::after {
+            content: "";
+            position: relative;
+            top: -15px;
+            right: 5px;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-image: url("img/cursor.png");
+            background-position: center;
+            background-size: contain;
+            transition: 200ms;
+        }
+
+        .aft-arrow:hover::after {
+            opacity: 0;
+        }
+
+
+        .marquee {
+            overflow: hidden;
+            /* hide the scrolling overflow */
+            -webkit-mask-image: linear-gradient(to right,
+                    transparent 0%,
+                    black 10%,
+                    black 90%,
+                    transparent 100%);
+            mask-image: linear-gradient(to right,
+                    transparent 0%,
+                    black 10%,
+                    black 90%,
+                    transparent 100%);
+        }
+
+        .marquee__inner {
+            display: flex;
+            width: max-content;
+            animation: marquee 23s linear infinite;
+        }
+
+        .marquee__group {
+            display: flex;
+        }
+
+        .marquee__group span {
+            margin: 0 1.5rem;
+            pointer-events: none;
+        }
+
+        .marquee__group span img {
+            height: 30px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nantha Venkat Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-white to-gray-100 text-gray-900">
+    <div id="wrapp" class="min-h-svh bg-gray-200">
+        <div class="rounded-md h-full pt-20">
+            <!-- Header -->
+            <header id="main-header"
+                class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 flex justify-between items-center px-6 py-3">
+                <!-- Your existing header content -->
+                <!-- Logo -->
+                <a href="index.html" class="signature"><img src="./img/Signature.svg" alt="Nantha Venkat"
+                        class="w-24"></a>
+
+                <!-- Desktop Navigation (hidden on mobile) -->
+                <nav id="main-navbar"
+                    class="fixed left-[50%] transition-transform duration-300 -translate-x-1/2 space-x-6 hidden md:flex bg-opacity-20 rounded-2xl shadow-lg shadow-black/10 bg-white/50 backdrop-blur-sm border border-white border-opacity-30 py-3 px-5 font-light">
+                    <a href="work.html" class="text-gray-900 hover:text-blue-500">Works</a>
+                    <a href="about.html" class="text-gray-900 hover:text-blue-500">About</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-500">Testimonials</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-500">Articles</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button (hidden on desktop) -->
+                <button id="menu-open" class="md:hidden text-gray-800 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Let's Connect Button (hidden on mobile, shown on desktop) -->
+                <a href="mailto:vnanthakumar00@gmail.com"
+                    class="hidden md:block bg-gray-700 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-500 transition-all duration-200 border border-gray-500 hover:border-blue-700">
+                    Let's connect
+                </a>
+            </header>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu"
+                class="fixed inset-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 flex flex-col items-center justify-center space-y-8 h-0 overflow-hidden transition-all duration-500 ease-in-out">
+
+                <!-- logo -->
+                <a href="index.html" class="signature"><img src="./img/Signature.svg" alt="Nantha Venkat"
+                        class="w-24 absolute top-6 left-6"></a>
+
+                <!-- Close Button -->
+                <button id="menu-close" class="absolute top-6 right-6 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Menu Links -->
+                <a href="#" class="text-2xl text-blue-500 hover:text-blue-500 font-semibold"
+                    style="font-family: 'Literata', sans-serif"><i>Works</i></a>
+                <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">About</a>
+                <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Testimonials</a>
+                <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Articles</a>
+
+                <a href="mailto:vnanthakumar00@gmail.com"
+                    class="mt-8 bg-gray-700 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-500 transition-all duration-200 border border-gray-500 hover:border-blue-700 text-lg">
+                    Let's connect
+                </a>
+            </div>
+
+            <div class="js-scroll">
+                <!-- Hero Section -->
+                <section
+                    class="text-center px-4 py-5 relative bg-[url(img/concentricCircle.svg)] bg-no-repeat bg-center">
+
+                    <div class="absolute swing -top-1 md:top-32 left-8 md:left-32">
+                        <img src="img/code-i.png" alt="code" class="origin-top w-18 md:w-48">
+                    </div>
+
+                    <div class="absolute bottom-16 swing right-32 group hidden lg:inline-block">
+                        <img src="img/location.png" alt="code" class="origin-top w-48">
+
+                        <span
+                            class="mt-2 opacity-[0] group-hover:opacity-100 transition-all duration-300 bg-gray-700 p-2 rounded-md text-white text-xs">TamilNadu,
+                            india</span>
+                    </div>
+
+                    <div class="mb">
+                        <img src="./img/profile1.webp" alt="Nantha Venkat"
+                            class="mx-auto w-24 h-24 rounded-full shadow-lg object-cover object-top border-white border-2" />
+                        <h2 class="font-semibold text-lg mt-2">Nantha Venkat</h2>
+                        <p class="text-sm text-gray-600">Product Developer</p>
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-medium leading-tight max-w-4xl mx-auto mt-6">
+                        Pasionate <i><span style="font-family:'Literata', sans-serif">Individual,</span></i>
+                        <br />Translate
+                        idea into <br><i><span style="font-family:'Literata', sans-serif">digital</span></i> reality
+                    </h1>
+
+                    <div class="mt-10 space-x-4">
+                        <a href=""
+                            class="bg-orange-500 hover:bg-orange-600 border border-orange-700 text-white px-6 py-3 rounded-full transition-all duration-200 shadow-md">
+                            Let's talk!
+                        </a>
+                    </div>
+
+                    <!-- Floating Buttons -->
+                    <div class="absolute left-10 bottom-2 md:bottom-20 floating aft-arrow">
+                        <a href=""
+                            class="bg-blue-500 text-white px-4 py-2 rounded-s-full hover:rounded-full transituin-all duration-500 rounded-br-full text-sm group border-blue-700 border">
+                            <span class="group-hover:hidden">Check my work</span>
+                            <span class="hidden group-hover:inline-block">Click me</span>
+                        </a>
+                    </div>
+
+                    <!-- follow me on button with social icons -->
+                    <div class="absolute right-40 top-32 group bg-gray-700 rounded-lg floating hidden md:inline-block">
+                        <div class="relative">
+                            <!-- Trigger box -->
+                            <div class="text-white px-4 py-2 text-sm font-semibold cursor-pointer shadow-lg text-left">
+                                follow me on
+
+                                <!-- Hover box -->
+                                <div
+                                    class="relative text-white group-hover:py-3 shadow-lg w-52 h-px group-hover:h-full w-px group-hover:w-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10">
+                                    <div class="flex justify-between">
+                                        <a href="" target="_blank"
+                                            class="text-3xl leading-none mr-3 hover:scale-[1.1] transition-all duration-200"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="" target="_blank"
+                                            class="text-3xl leading-none mr-3 hover:scale-[1.1] transition-all duration-200"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                        <a href="" target="_blank"
+                                            class="text-3xl leading-none mr-3 hover:scale-[1.1] transition-all duration-200"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Infinite scrolling - My skills -->
+                <div class="marquee mx-auto mt-10 pb-20 w-full lg:w-[50%]">
+                    <div class="marquee__inner">
+                        <div class="marquee__group">
+                            <span><img src="img/HTML5.svg" alt="html"></span>
+                            <span><img src="img/CSS3.svg" alt="css"></span>
+                            <span><img src="img/bootstrap.png" alt="bootstrap"></span>
+                            <span><img src="img/tailwind_CSS.png" alt="Tailwind"></span>
+                            <span><img src="img/Sass.png" alt="scss"></span>
+                            <span><img src="img/Javascript.png" alt="Javascript"></span>
+                            <span><img src="img/jquery.svg" alt="jquery"></span>
+                            <span><img src="img/react.png" alt="React"></span>
+                            <span><img src="img/PHP.svg" alt="Php"></span>
+                            <span><img src="img/CPanel.svg" alt="Cpanel"></span>
+                            <span><img src="img/Plesk.png" alt="Plesk"></span>
+                            <span><img src="img/GitHub.svg" alt="github"></span>
+                            <span><img src="img/Figma.svg" alt="figma"></span>
+                            <span><img src="img/Adobe_Illustrator.svg" alt="illustrator"></span>
+                            <span><img src="img/Adobe_Photoshop.svg" alt="photoshop"></span>
+                        </div>
+                        <div class="marquee__group">
+                            <span><img src="img/HTML5.svg" alt="html"></span>
+                            <span><img src="img/CSS3.svg" alt="css"></span>
+                            <span><img src="img/bootstrap.png" alt="bootstrap"></span>
+                            <span><img src="img/tailwind_CSS.png" alt="Tailwind"></span>
+                            <span><img src="img/Sass.png" alt="scss"></span>
+                            <span><img src="img/Javascript.png" alt="Javascript"></span>
+                            <span><img src="img/jquery.svg" alt="jquery"></span>
+                            <span><img src="img/react.png" alt="React"></span>
+                            <span><img src="img/PHP.svg" alt="Php"></span>
+                            <span><img src="img/CPanel.svg" alt="Cpanel"></span>
+                            <span><img src="img/Plesk.png" alt="Plesk"></span>
+                            <span><img src="img/GitHub.svg" alt="github"></span>
+                            <span><img src="img/Figma.svg" alt="figma"></span>
+                            <span><img src="img/Adobe_Illustrator.svg" alt="illustrator"></span>
+                            <span><img src="img/Adobe_Photoshop.svg" alt="photoshop"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer Buttons -->
+            <footer class="fixed bottom-4 right-4 text-right flex">
+                <a href="mailto:vnanthakumar00@gmail.com"
+                    class="bg-white shadow px-4 mr-2 py-1 rounded-full transition-all duration-100 inline-flex group hover:scale-[1.1]">
+                    <img src="img/envelope.svg" alt="mail" width="20" class="inline mr-2">Drop an Email <span
+                        class=" group-hover:inline ml-2 -rotate-45"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="" class="bg-white shadow px-4 py-1 rounded-full text-sm inline-flex">✉️ Made in Framer</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="scrcipt.js"></script>
+</body>
+
+</html>
