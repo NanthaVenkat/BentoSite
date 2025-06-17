@@ -5,17 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nantha Venkat Portfolio</title>
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fav icon -->
     <link rel="icon" href="img/favicon.png">
+    <!-- fontawson -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- google fonts Inter, Literata -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <!-- style sheet -->
     <link rel="stylesheet" href="style.css">
+
     <style>
 
     </style>
@@ -38,7 +42,7 @@
                     <a href="work.html" class="text-gray-900 hover:text-blue-500">Works</a>
                     <a href="about.html" class="text-gray-900 hover:text-blue-500">About</a>
                     <a href="#" class="text-gray-900 hover:text-blue-500">Testimonials</a>
-                    <a href="#" class="text-gray-900 hover:text-blue-500">Articles</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-500">Contact</a>
                 </nav>
 
                 <!-- Mobile Hamburger Button (hidden on desktop) -->
@@ -73,8 +77,7 @@
                 </button>
 
                 <!-- Menu Links -->
-                <a href="#" class="text-2xl text-blue-500 hover:text-blue-500 font-semibold"
-                    style="font-family: 'Literata', sans-serif"><i>Works</i></a>
+                <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Works</a>
                 <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">About</a>
                 <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Testimonials</a>
                 <a href="#" class="text-2xl text-gray-900 hover:text-blue-500">Articles</a>
@@ -87,19 +90,38 @@
 
             <div class="js-scroll">
                 <!-- Hero Section -->
-                <section
-                    class="text-center px-4 py-5 relative bg-[url(img/concentricCircle.svg)] bg-no-repeat bg-center">
+                <section class="text-center px-4 py-5 relativ">
 
-                    <div class="absolute swing -top-1 md:top-32 left-8 md:left-32">
-                        <img src="img/code-i.png" alt="code" class="origin-top w-18 md:w-48">
+                    <div class="absolute swing md:top-32 left-8 md:left-32">
+                        <img src="img/code-i.png" alt="code" class="origin-top w-18 md:w-40 lg:w-48">
                     </div>
 
-                    <div class="absolute bottom-16 swing right-32 group hidden lg:inline-block">
-                        <img src="img/location.png" alt="code" class="origin-top w-48">
+                    <div class="absolute bottom-16 swing right-10 xl:right-32 group hidden lg:inline-block">
+                        <div
+                            class="relative w-64 h-64 backdrop-blur-sm rounded-full border-8 border-gray-500 shadow-lg">
+                            <!-- Clock numbers -->
+                            <span class="absolute top-2 left-1/2 transform -translate-x-1/2 text-xl font-bold">12</span>
+                            <span class="absolute top-1/2 right-2 transform -translate-y-1/2 text-xl font-bold">3</span>
+                            <span
+                                class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-xl font-bold">6</span>
+                            <span class="absolute top-1/2 left-2 transform -translate-y-1/2 text-xl font-bold">9</span>
 
-                        <span
-                            class="mt-2 opacity-[0] group-hover:opacity-100 transition-all duration-300 bg-gray-700 p-2 rounded-md text-white text-xs">TamilNadu,
-                            india</span>
+                            <!-- Clock hands -->
+                            <div
+                                class="absolute left-1/2 bottom-1/2 w-1 h-16 bg-gray-600 origin-bottom -ml-0.5 hour-hand">
+                            </div>
+                            <div
+                                class="absolute left-1/2 bottom-1/2 w-1 h-20 bg-gray-700 origin-bottom -ml-0.5 minute-hand">
+                            </div>
+                            <div
+                                class="absolute left-1/2 bottom-1/2 w-0.5 h-24 bg-orange-500 origin-bottom -ml-0.25 second-hand">
+                            </div>
+
+                            <!-- Center dot -->
+                            <div
+                                class="absolute top-1/2 left-1/2 w-3 h-3 bg-gray-800 rounded-full transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="mb">
@@ -109,10 +131,9 @@
                         <p class="text-sm text-gray-600">Product Developer</p>
                     </div>
 
-                    <h1 class="text-4xl md:text-6xl font-medium leading-tight max-w-4xl mx-auto mt-6">
-                        Pasionate <i><span style="font-family:'Literata', sans-serif">Individual,</span></i>
-                        <br />Translate
-                        idea into <br><i><span style="font-family:'Literata', sans-serif">digital</span></i> reality
+                    <h1 class="text-4xl md:text-6xl xl:text-7xl font-semibold max-w-4xl mx-auto mt-6 text-gray-800">
+                        Pasionate <i><span class="font-literate">Individual,</span></i>
+                        <br />Translate idea into <br><i><span class="font-literate">digital</span></i> reality
                     </h1>
 
                     <div class="mt-10 space-x-4">
@@ -123,11 +144,11 @@
                     </div>
 
                     <!-- Floating Buttons -->
-                    <div class="absolute left-10 bottom-2 md:bottom-20 floating aft-arrow">
-                        <a href=""
+                    <div class="absolute origin-center bottom-2 md:bottom-20 floating aft-arrow">
+                        <a href="work.html"
                             class="bg-blue-500 text-white px-4 py-2 rounded-s-full hover:rounded-full transituin-all duration-500 rounded-br-full text-sm group border-blue-700 border">
-                            <span class="group-hover:hidden">Check my work</span>
-                            <span class="hidden group-hover:inline-block">Click me</span>
+                            <span class="group-hover:hidden duration-500">Check my work</span>
+                            <span class="hidden group-hover:inline-block duration-500">Click me</span>
                         </a>
                     </div>
 
@@ -200,20 +221,19 @@
                 </div>
             </div>
 
-
             <!-- Footer Buttons -->
             <footer class="fixed bottom-4 right-4 text-right flex">
                 <a href="mailto:vnanthakumar00@gmail.com"
-                    class="bg-white shadow px-4 mr-2 py-1 rounded-full transition-all duration-100 inline-flex group hover:scale-[1.1]">
+                    class="group bg-white/50 backdrop-blur-sm shadow px-4 mr-2 py-1 rounded-full transition-all duration-100 inline-flex group hover:scale-[1.05]">
                     <img src="img/envelope.svg" alt="mail" width="20" class="inline mr-2">Drop an Email <span
-                        class=" group-hover:inline ml-2 -rotate-45"><i class="fa-solid fa-arrow-right"></i></span>
+                        class=" group-hover:inline ml-2 -rotate-45"><i
+                            class="fa-solid fa-arrow-right rotate-0 group-hover:rotate-45 transition-all duration-100"></i></span>
                 </a>
-
-                <a href="" class="bg-white shadow px-4 py-1 rounded-full text-sm inline-flex">✉️ Made in Framer</a>
             </footer>
         </div>
     </div>
 
+    <!-- script -->
     <script src="scrcipt.js"></script>
 </body>
 
